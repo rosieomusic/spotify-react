@@ -55,6 +55,7 @@ export default function SpotifyPage() {
 						{albums && <AlbumComponent albums={albums} />}
 					</>
 				)}
+				;
 			</div>
 		</>
 	);

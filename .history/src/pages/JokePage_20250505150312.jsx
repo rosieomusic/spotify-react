@@ -7,7 +7,7 @@ function JokePage() {
 
 	function getJoke() {
 		JokeService.getRandomJoke().then((response) => {
-			//console.log(response);
+			console.log(response);
 			setJoke(response.data);
 		});
 	}
@@ -17,8 +17,7 @@ function JokePage() {
 
 	return (
 		<>
-			<h1>This is the Joke Page</h1>
-			<p>{joke} </p>
+			<h1>This is the Joke Page</h1>;<p> </p>
 		</>
 	);
 }

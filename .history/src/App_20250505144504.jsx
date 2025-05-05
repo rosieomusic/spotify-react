@@ -12,7 +12,7 @@ function App() {
 				<Link to='/'>Home | </Link>
 				<Link to='/about'>About | </Link>
 				<Link to='/joke'>Joke | </Link>
-				<Link to='/spotify'>Spotify</Link>
+				<Link to='/spotify'>Spotify </Link>
 			</nav>
 			<Routes>
 				<Route

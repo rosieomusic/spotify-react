@@ -52,7 +52,7 @@ export default function SpotifyPage() {
 						<h2>Followers: {artist.followers.total}</h2>
 						<h2>Genres: {artist.genres}</h2>
 						<button onClick={getAlbumInfo}>Get Albums</button>
-						{albums && <AlbumComponent albums={albums} />}
+						{albums && <AlbumComponent albums={albums} />};
 					</>
 				)}
 			</div>

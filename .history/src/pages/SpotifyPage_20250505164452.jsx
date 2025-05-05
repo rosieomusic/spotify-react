@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import SpotifyService from '../services/SpotifyService.js';
-import AlbumComponent from '../components/AlbumComponent.jsx';
 
 export default function SpotifyPage() {
 	const [token, setToken] = useState('');
@@ -20,10 +19,7 @@ export default function SpotifyPage() {
 		});
 	}
 	function getAlbumInfo() {
-		SpotifyService.getAlbums(artist.id, token).then((response) => {
-			console.log(response);
-			setAlbums(response.data.items);
-		});
+		SpotifyService.getAlbums(artist.id, token).then(response);
 	}
 
 	function getAuthToken() {
@@ -52,7 +48,6 @@ export default function SpotifyPage() {
 						<h2>Followers: {artist.followers.total}</h2>
 						<h2>Genres: {artist.genres}</h2>
 						<button onClick={getAlbumInfo}>Get Albums</button>
-						{albums && <AlbumComponent albums={albums} />}
 					</>
 				)}
 			</div>
