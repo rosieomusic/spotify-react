@@ -1,11 +1,6 @@
 import './App.css';
-import {
-	HashRouter as Router,
-	Routes,
-	Route,
-	NavLink,
-	HashRouter,
-} from 'react-router-dom';
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 import HomePage from './pages/HomePage';
 import SpotifyPage from './pages/SpotifyPage';
@@ -13,7 +8,7 @@ import JokePage from './pages/JokePage';
 
 function App() {
 	return (
-		<HashRouter>
+		<BrowserRouter>
 			<div id='app-container'>
 				<nav>
 					<NavLink
@@ -59,7 +54,7 @@ function App() {
 					</Routes>
 				</main>
 			</div>
-		</HashRouter>
+		</BrowserRouter>
 	);
 }
 
