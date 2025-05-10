@@ -25,6 +25,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
+	padding-top: 1rem;
 }
 
 #app-container {
@@ -41,7 +42,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	background-color: #cdb4db;
-
+	padding-top: 2rem;
 	padding-bottom: 4rem;
 }
 

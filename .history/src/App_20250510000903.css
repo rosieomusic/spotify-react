@@ -41,7 +41,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	background-color: #cdb4db;
-
+	padding-top: 2rem;
 	padding-bottom: 4rem;
 }
 
