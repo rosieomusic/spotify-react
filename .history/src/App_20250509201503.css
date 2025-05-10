@@ -1,0 +1,96 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#app-container {
+	display: flex;
+	flex-direction: column;
+}
+
+#root {
+	max-width: 1280px;
+	margin: 0;
+	height: 100dvh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+body {
+	background-color: #cdb4db;
+}
+
+.spotify-page {
+	min-height: 100vh;
+}
+
+button {
+	background-color: #a2d2ff;
+	border: none;
+	margin-top: 20px;
+	transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	font: inherit;
+	cursor: pointer;
+	outline: none;
+	transition: border-color 0.25s;
+	transform: scale(1);
+	display: inline-block;
+	transform-origin: center;
+}
+button:hover {
+	transform: scale(1.05);
+}
+button:focus,
+button:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+}
+
+button:focus {
+	border: none;
+	outline: none;
+}
+button:hover {
+	--transform: translateY(2px);
+	box-shadow: 0 2x 2px rgba(0, 0, 0, 0.25);
+}
+h1,
+p {
+	justify-self: center;
+	text-align: center;
+	align-self: center;
+	margin-bottom: 20px;
+}
+
+nav {
+	text-align: center;
+	margin-top: 1rem;
+}
+a {
+	text-decoration: none;
+	color: black;
+	background-color: #a2d2ff;
+	border-radius: 30px;
+	padding: 0.5em;
+}
+.nav-link.active {
+	text-decoration: none;
+	background-color: white;
+	color: black;
+}
+.nav-link:hover {
+	text-decoration: none;
+	color: #a2d2ff;
+	background-color: black;
+}
+main {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 1rem;
+}
