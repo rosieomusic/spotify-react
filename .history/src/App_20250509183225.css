@@ -1,0 +1,17 @@
+#root {
+	max-width: 1280px;
+	margin: 0;
+	height: 100dvh;
+
+	text-align: center;
+}
+body {
+	background-color: #cdb4db;
+}
+button {
+	background-color: #a2d2ff;
+	border: none;
+}
+p {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

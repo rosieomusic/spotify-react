@@ -1,0 +1,9 @@
+#root {
+	max-width: 1280px;
+	margin: 0;
+
+	text-align: center;
+}
+body {
+	background-color: #cdb4db;
+}

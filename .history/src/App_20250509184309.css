@@ -1,0 +1,17 @@
+#root {
+	max-width: 1280px;
+	margin: 0;
+	height: 100dvh;
+}
+body {
+	background-color: #cdb4db;
+}
+button {
+	background-color: #a2d2ff;
+	border: none;
+}
+p {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
+}
