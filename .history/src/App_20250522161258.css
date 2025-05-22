@@ -133,9 +133,8 @@ nav {
 .albumImg {
 	width: 100%;
 	max-width: 100%;
-	display: block;
+	display: grid;
 	justify-self: center;
-	margin: 0 auto;
 }
 a {
 	text-decoration: none;
