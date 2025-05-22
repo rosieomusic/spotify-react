@@ -144,8 +144,8 @@ a {
 }
 .nav-link.active {
 	text-decoration: none;
-	color: #a2d2ff;
-	background-color: #645394;
+	background-color: white;
+	color: #820263;
 }
 .nav-link:hover {
 	text-decoration: none;

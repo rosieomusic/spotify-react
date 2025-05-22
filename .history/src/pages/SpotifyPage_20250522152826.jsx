@@ -103,7 +103,7 @@ export default function SpotifyPage() {
 													target='_blank'
 													rel='noopener noreferrer'
 												>
-													<p id='track'>{t.name}</p>
+													<p>{t.name}</p>
 												</a>
 											</li>
 										))}

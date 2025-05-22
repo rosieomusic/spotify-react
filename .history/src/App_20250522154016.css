@@ -96,11 +96,8 @@ h2 {
 p {
 	font-size: 22px;
 }
-h3 {
-	font-size: 2em;
-}
 label {
-	font-size: 1.5em;
+	font-size: 2em;
 }
 #track {
 	margin: 0;
@@ -144,8 +141,8 @@ a {
 }
 .nav-link.active {
 	text-decoration: none;
-	color: #a2d2ff;
-	background-color: #645394;
+	background-color: white;
+	color: #820263;
 }
 .nav-link:hover {
 	text-decoration: none;

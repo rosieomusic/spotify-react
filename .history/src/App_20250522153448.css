@@ -6,7 +6,7 @@ body {
 	background-color: #cdb4db;
 	box-sizing: border-box;
 	font-family: 'Jersey 10', sans-serif;
-	color: #820263;
+	color: #645394;
 }
 body {
 	overflow-x: hidden;
@@ -64,7 +64,7 @@ button {
 	font-size: 1.1em;
 	font-weight: 500;
 	border-radius: 30px;
-	color: #820263;
+	color: #645394;
 }
 button:focus {
 	border: none;
@@ -88,19 +88,12 @@ li {
 	line-height: normal;
 }
 h2 {
-	font-size: 2em;
 	text-align: center;
 	padding-left: 1em;
 	padding-right: 1em;
 }
 p {
 	font-size: 22px;
-}
-h3 {
-	font-size: 2em;
-}
-label {
-	font-size: 1.5em;
 }
 #track {
 	margin: 0;
@@ -134,7 +127,7 @@ nav {
 }
 a {
 	text-decoration: none;
-	color: #820263;
+	color: #645394;
 	background-color: #a2d2ff;
 	border-radius: 30px;
 	padding: 0.5em;
@@ -144,8 +137,8 @@ a {
 }
 .nav-link.active {
 	text-decoration: none;
-	color: #a2d2ff;
-	background-color: #645394;
+	background-color: white;
+	color: #645394;
 }
 .nav-link:hover {
 	text-decoration: none;

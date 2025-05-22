@@ -97,7 +97,7 @@ p {
 	font-size: 22px;
 }
 h3 {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 label {
 	font-size: 1.5em;
@@ -144,8 +144,8 @@ a {
 }
 .nav-link.active {
 	text-decoration: none;
-	color: #a2d2ff;
-	background-color: #645394;
+	background-color: white;
+	color: #820263;
 }
 .nav-link:hover {
 	text-decoration: none;

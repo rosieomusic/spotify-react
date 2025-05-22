@@ -6,7 +6,7 @@ body {
 	background-color: #cdb4db;
 	box-sizing: border-box;
 	font-family: 'Jersey 10', sans-serif;
-	color: #820263;
+	color: #645394;
 }
 body {
 	overflow-x: hidden;
@@ -61,10 +61,9 @@ button {
 	display: inline-block;
 	transform-origin: center;
 	padding: 0.6em 1.2em;
-	font-size: 1.1em;
+	font-size: 1em;
 	font-weight: 500;
 	border-radius: 30px;
-	color: #820263;
 }
 button:focus {
 	border: none;
@@ -85,25 +84,14 @@ p {
 }
 li {
 	list-style-type: none;
-	line-height: normal;
 }
 h2 {
-	font-size: 2em;
 	text-align: center;
 	padding-left: 1em;
 	padding-right: 1em;
 }
 p {
 	font-size: 22px;
-}
-h3 {
-	font-size: 2em;
-}
-label {
-	font-size: 1.5em;
-}
-#track {
-	margin: 0;
 }
 
 nav {
@@ -117,13 +105,9 @@ nav {
 	line-height: normal;
 }
 .bandImg {
-	width: 100%;
-	display: flex;
-	max-width: 100%;
+	max-width: 400px;
 	border-radius: 70%;
 	padding: 1em;
-	justify-self: center;
-	align-self: center;
 }
 
 .albumImg {
@@ -134,7 +118,7 @@ nav {
 }
 a {
 	text-decoration: none;
-	color: #820263;
+	color: white;
 	background-color: #a2d2ff;
 	border-radius: 30px;
 	padding: 0.5em;
@@ -144,8 +128,8 @@ a {
 }
 .nav-link.active {
 	text-decoration: none;
-	color: #a2d2ff;
-	background-color: #645394;
+	background-color: white;
+	color: black;
 }
 .nav-link:hover {
 	text-decoration: none;
@@ -171,7 +155,6 @@ input {
 	font-family: 'Jersey 10', sans-serif;
 	font-size: 18px;
 	font-weight: 100;
-	color: #645394;
 }
 input:focus {
 	border: none;
@@ -183,19 +166,8 @@ footer {
 ol {
 	display: flex;
 	flex-direction: column;
-	margin: 20px;
-	font-size: 28px;
-	font-weight: 400;
-	text-align: left;
+	justify-self: center;
+	align-self: center;
+	text-align: center;
 	padding-inline-start: 0;
-}
-#track-link {
-	background-color: #cdb4db;
-	line-height: 0%;
-}
-@media screen and (max-width: 768px) {
-	.bandImg,
-	.albumImg {
-		width: 400px;
-	}
 }

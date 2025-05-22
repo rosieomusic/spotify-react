@@ -98,12 +98,12 @@ export default function SpotifyPage() {
 										{track.map((t) => (
 											<li key={t.id}>
 												<a
-													id='track-link'
 													href={t.external_urls.spotify}
 													target='_blank'
 													rel='noopener noreferrer'
+													style={{ textDecoration: 'none', color: 'inherit' }}
 												>
-													<p id='track'>{t.name}</p>
+													<p>{t.name}</p>
 												</a>
 											</li>
 										))}

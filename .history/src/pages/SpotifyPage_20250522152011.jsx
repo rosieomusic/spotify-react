@@ -93,18 +93,21 @@ export default function SpotifyPage() {
 							</div>
 							{track && track.length > 0 && (
 								<div className='top-tracks'>
-									<h3>Top Tracks</h3>
+									<h2>Top Tracks</h2>
 									<ol>
 										{track.map((t) => (
 											<li key={t.id}>
-												<a
-													id='track-link'
-													href={t.external_urls.spotify}
-													target='_blank'
-													rel='noopener noreferrer'
-												>
-													<p id='track'>{t.name}</p>
-												</a>
+												{t.name}
+												{t.preview_url && (
+													<div>
+														<audio
+															controls
+															src={t.preview_url}
+														>
+															Your browser does not support the audio element.
+														</audio>
+													</div>
+												)}
 											</li>
 										))}
 									</ol>
