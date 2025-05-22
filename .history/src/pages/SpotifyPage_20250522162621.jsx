@@ -84,7 +84,7 @@ export default function SpotifyPage() {
 								<li className='info'>Followers: {artist.followers.total}</li>
 								<li>{artist.tracks}</li>
 								{artist.genres && artist.genres.length > 0 && (
-									<li className='info'>Genres: {artist.genres.join(', ')} </li>
+									<li className='info'>Genres: {artist.genres + ' ' + ' '} </li>
 								)}
 							</ul>
 
