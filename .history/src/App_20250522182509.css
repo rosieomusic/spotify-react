@@ -1,5 +1,6 @@
 html,
 body {
+	height: 100%;
 	margin: 0;
 	padding: 0;
 	background-color: #cdb4db;
@@ -12,7 +13,6 @@ body {
 	overflow-wrap: break-word;
 }
 body {
-	margin-top: 30px;
 	overflow-x: hidden;
 }
 :root {

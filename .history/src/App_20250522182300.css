@@ -1,5 +1,6 @@
 html,
 body {
+	height: 100%;
 	margin: 0;
 	padding: 0;
 	background-color: #cdb4db;
@@ -12,7 +13,6 @@ body {
 	overflow-wrap: break-word;
 }
 body {
-	margin-top: 30px;
 	overflow-x: hidden;
 }
 :root {
@@ -100,7 +100,8 @@ li {
 	line-height: normal;
 	white-space: normal;
 	word-break: break-word;
-
+	width: 100%;
+	height: 1.5em;
 	margin-top: 0;
 }
 h2 {
@@ -220,15 +221,10 @@ ol {
 }
 .top-tracks {
 	border: 5px dotted #820263;
-	max-width: fit-content;
-	justify-self: center;
 }
 a#track-link {
 	padding: 0;
 	margin: 0;
-}
-p#track:hover {
-	color: white;
 }
 @media screen and (max-width: 768px) {
 	.bandImg {
