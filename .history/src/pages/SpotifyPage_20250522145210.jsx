@@ -76,17 +76,20 @@ export default function SpotifyPage() {
 										src={artist.images[0].url}
 										alt={`${artist.name} Img`}
 									/>
+
+									<ul>
+										<li className='info'>Popularity: {artist.popularity}</li>
+										<li className='info'>{artist.name}</li>
+										<li className='info'>
+											Followers: {artist.followers.total}
+										</li>
+										<li>{artist.tracks}</li>
+										{artist.genres && artist.genres.length > 0 && (
+											<li className='info'>Genres: {artist.genres + ' '} </li>
+										)}
+									</ul>
 								</a>
 							)}
-							<ul>
-								<li className='info'>Popularity: {artist.popularity}</li>
-								<li className='info'>{artist.name}</li>
-								<li className='info'>Followers: {artist.followers.total}</li>
-								<li>{artist.tracks}</li>
-								{artist.genres && artist.genres.length > 0 && (
-									<li className='info'>Genres: {artist.genres + ' '} </li>
-								)}
-							</ul>
 
 							<div>
 								<button onClick={getTopTracks}>Get Top Tracks</button>

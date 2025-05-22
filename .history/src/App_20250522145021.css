@@ -6,7 +6,6 @@ body {
 	background-color: #cdb4db;
 	box-sizing: border-box;
 	font-family: 'Jersey 10', sans-serif;
-	color: black;
 }
 body {
 	overflow-x: hidden;
@@ -87,8 +86,6 @@ li {
 }
 h2 {
 	text-align: center;
-	padding-left: 1em;
-	padding-right: 1em;
 }
 p {
 	font-size: 22px;
@@ -102,7 +99,6 @@ nav {
 .info {
 	text-align: left;
 	font-size: 40px;
-	line-height: normal;
 }
 .bandImg {
 	max-width: 400px;
@@ -118,7 +114,7 @@ nav {
 }
 a {
 	text-decoration: none;
-	color: white;
+	color: black;
 	background-color: #a2d2ff;
 	border-radius: 30px;
 	padding: 0.5em;
@@ -152,9 +148,6 @@ input {
 	border: none;
 	padding: 0.5em;
 	border-radius: 30px;
-	font-family: 'Jersey 10', sans-serif;
-	font-size: 18px;
-	font-weight: 100;
 }
 input:focus {
 	border: none;

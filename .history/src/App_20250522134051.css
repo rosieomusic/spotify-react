@@ -5,8 +5,6 @@ body {
 	padding: 0;
 	background-color: #cdb4db;
 	box-sizing: border-box;
-	font-family: 'Jersey 10', sans-serif;
-	color: black;
 }
 body {
 	overflow-x: hidden;
@@ -58,12 +56,13 @@ button {
 	outline: none;
 	transition: border-color 0.25s;
 	transform: scale(1);
-	display: inline-block;
+
 	transform-origin: center;
 	padding: 0.6em 1.2em;
 	font-size: 1em;
 	font-weight: 500;
 	border-radius: 30px;
+	width: 300px;
 }
 button:focus {
 	border: none;
@@ -75,7 +74,6 @@ button:hover {
 }
 h1,
 p {
-	font-weight: 100;
 	justify-self: center;
 	text-align: center;
 	align-self: center;
@@ -87,44 +85,42 @@ li {
 }
 h2 {
 	text-align: center;
-	padding-left: 1em;
-	padding-right: 1em;
-}
-p {
-	font-size: 22px;
 }
 
 nav {
 	text-align: center;
 	margin-top: 1rem;
 }
-
+.albums {
+	display: flex;
+	flex-direction: column;
+}
 .info {
 	text-align: left;
-	font-size: 40px;
-	line-height: normal;
+	display: flex;
+
+	flex-direction: column;
 }
 .bandImg {
 	max-width: 400px;
 	border-radius: 70%;
 	padding: 1em;
 }
-
+.artist {
+	display: flex;
+}
 .albumImg {
 	width: 100%;
 	max-width: 90%;
-	display: grid;
-	justify-self: center;
+	margin: 2em;
+	justify-content: center;
 }
 a {
 	text-decoration: none;
-	color: white;
+	color: black;
 	background-color: #a2d2ff;
 	border-radius: 30px;
 	padding: 0.5em;
-}
-.link {
-	background-color: #cdb4db;
 }
 .nav-link.active {
 	text-decoration: none;
@@ -152,22 +148,8 @@ input {
 	border: none;
 	padding: 0.5em;
 	border-radius: 30px;
-	font-family: 'Jersey 10', sans-serif;
-	font-size: 18px;
-	font-weight: 100;
 }
 input:focus {
 	border: none;
 	outline: none;
-}
-footer {
-	background-color: #cdb4db;
-}
-ol {
-	display: flex;
-	flex-direction: column;
-	justify-self: center;
-	align-self: center;
-	text-align: center;
-	padding-inline-start: 0;
 }

@@ -36,12 +36,4 @@ export default {
 			headers: { Authorization: 'Bearer ' + token },
 		});
 	},
-	getTopTracks(artistId, token) {
-		return axios.get(
-			`https://api.spotify.com/v1/artists/${artistId}/top-tracks?market=US`,
-			{
-				headers: { Authorization: 'Bearer ' + token },
-			}
-		);
-	},
 };

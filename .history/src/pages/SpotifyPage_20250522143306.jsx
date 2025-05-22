@@ -28,8 +28,7 @@ export default function SpotifyPage() {
 	}
 	function getTopTracks() {
 		SpotifyService.getTopTracks(artist.id, token).then((response) => {
-			console.log(response);
-			setTracks(response.data.tracks);
+			setTracks(response.tracks);
 		});
 	}
 	function handleKeyPress(event) {
@@ -64,6 +63,15 @@ export default function SpotifyPage() {
 				<div id='artist'>
 					{artist && (
 						<div id='info'>
+							<ul>
+								<li className='info'>Popularity: {artist.popularity}</li>
+								<li className='info'>{artist.name}</li>
+								<li className='info'>Followers: {artist.followers.total}</li>
+								<li>{artist.tracks}</li>
+								{artist.genres && artist.genres.length > 0 && (
+									<li className='info'>Genres: {artist.genres + ' '} </li>
+								)}
+							</ul>
 							{artist.images && artist.images.length > 0 && (
 								<a
 									className='link'
@@ -78,42 +86,6 @@ export default function SpotifyPage() {
 									/>
 								</a>
 							)}
-							<ul>
-								<li className='info'>Popularity: {artist.popularity}</li>
-								<li className='info'>{artist.name}</li>
-								<li className='info'>Followers: {artist.followers.total}</li>
-								<li>{artist.tracks}</li>
-								{artist.genres && artist.genres.length > 0 && (
-									<li className='info'>Genres: {artist.genres + ' '} </li>
-								)}
-							</ul>
-
-							<div>
-								<button onClick={getTopTracks}>Get Top Tracks</button>
-							</div>
-							{track && track.length > 0 && (
-								<div className='top-tracks'>
-									<h3>Top Tracks</h3>
-									<ol>
-										{track.map((t) => (
-											<li key={t.id}>
-												{t.name}
-												{t.preview_url && (
-													<div>
-														<audio
-															controls
-															src={t.preview_url}
-														>
-															Your browser does not support the audio element.
-														</audio>
-													</div>
-												)}
-											</li>
-										))}
-									</ol>
-								</div>
-							)}
-
 							<div className='albums'>
 								<button onClick={getAlbumInfo}>Get Albums</button>
 								{albums && <AlbumComponent albums={albums} />}
