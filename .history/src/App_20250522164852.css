@@ -9,8 +9,6 @@ body {
 	color: #820263;
 	margin-bottom: 20px;
 	padding-inline-start: 0;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
 }
 body {
 	overflow-x: hidden;
@@ -86,15 +84,15 @@ p {
 	text-align: center;
 	align-self: center;
 	margin-bottom: 20px;
+	white-space: normal;
+	word-wrap: break-word;
 }
 li {
 	list-style-type: none;
 	line-height: normal;
 	white-space: normal;
-	word-break: break-word;
-	width: 100%;
-	height: 1.5em;
-	margin-top: 0;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
 }
 h2 {
 	font-size: 2em;
@@ -107,14 +105,14 @@ p {
 }
 h3 {
 	font-size: 2em;
-	padding: 0;
-	margin: 0;
 }
 label {
 	font-size: 1.5em;
 }
 #track {
 	margin: 0;
+	white-space: normal;
+	word-wrap: break-word;
 }
 
 nav {
@@ -126,7 +124,11 @@ nav {
 	text-align: left;
 	font-size: 40px;
 	line-height: normal;
-	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	white-space: normal;
+	word-wrap: break-word;
 }
 .bandImg {
 	width: 100%;
@@ -199,19 +201,19 @@ footer {
 	border-right: none;
 }
 ol {
+	display: flex;
+	flex-direction: column;
 	margin: 20px;
 	font-size: 28px;
 	font-weight: 400;
 	text-align: left;
 	padding-left: 0;
-
-	height: auto;
+	list-style-position: inside;
 }
 #track-link {
 	background-color: #cdb4db;
-	cursor: pointer;
+	line-height: 0%;
 }
-
 @media screen and (max-width: 768px) {
 	.bandImg {
 		max-width: 80%;
@@ -223,14 +225,6 @@ ol {
 		font-size: 1em;
 	}
 	.info {
-		font-size: 2em;
-	}
-	ol {
-		word-wrap: break-word;
-	}
-	li {
-		font-size: 1em;
-		word-break: break-word;
-		white-space: normal;
+		font-size: 1.5em;
 	}
 }

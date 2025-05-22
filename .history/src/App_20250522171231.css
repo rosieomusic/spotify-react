@@ -127,6 +127,7 @@ nav {
 	font-size: 40px;
 	line-height: normal;
 	display: block;
+	height: 0.8em;
 }
 .bandImg {
 	width: 100%;
@@ -209,9 +210,11 @@ ol {
 }
 #track-link {
 	background-color: #cdb4db;
-	cursor: pointer;
 }
-
+.top-tracks {
+	border: 4px dotted #820263;
+	margin: 100px;
+}
 @media screen and (max-width: 768px) {
 	.bandImg {
 		max-width: 80%;

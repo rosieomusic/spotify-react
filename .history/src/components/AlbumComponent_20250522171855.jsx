@@ -6,7 +6,6 @@ const AlbumComponent = ({ albums }) => {
 					<h2 key={album.id}> {album.name}</h2>
 					{album.images && album.images.length > 0 && (
 						<a
-							id='track-link'
 							href={album.external_urls.spotify}
 							target='_blank'
 							rel='noopener noreferrer'
