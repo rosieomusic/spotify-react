@@ -114,7 +114,9 @@ label {
 	font-size: 1.5em;
 }
 #track {
-	margin: 3px;
+	margin: 0;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 nav {
@@ -232,8 +234,5 @@ ol {
 		font-size: 1em;
 		word-break: break-word;
 		white-space: normal;
-	}
-	.top-tracks {
-		max-width: 400px;
 	}
 }
