@@ -118,9 +118,6 @@ nav {
 	text-align: left;
 	font-size: 40px;
 	line-height: normal;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 .bandImg {
 	width: 100%;
@@ -131,8 +128,8 @@ nav {
 }
 .bandImg,
 .albumImg {
-	margin: 0 auto;
-
+	margin-left: 0 auto;
+	margin-right: 0 auto;
 	height: auto;
 }
 

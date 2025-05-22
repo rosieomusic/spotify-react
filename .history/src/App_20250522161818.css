@@ -131,8 +131,8 @@ nav {
 }
 .bandImg,
 .albumImg {
-	margin: 0 auto;
-
+	margin-left: 0 auto;
+	margin-right: 0 auto;
 	height: auto;
 }
 
