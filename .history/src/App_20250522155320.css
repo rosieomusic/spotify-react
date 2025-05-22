@@ -66,7 +66,6 @@ button {
 	font-weight: 500;
 	border-radius: 30px;
 	color: #820263;
-	margin-bottom: 20px;
 }
 button:focus {
 	border: none;
@@ -203,15 +202,6 @@ ol {
 		max-width: 80%;
 	}
 	.albumImg {
-		max-width: 70%;
-	}
-	h2 {
-		font-size: 1em;
-	}
-	.info {
-		font-size: 2em;
-	}
-	p {
-		width: 350px;
+		max-width: 60%;
 	}
 }

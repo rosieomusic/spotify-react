@@ -1,6 +1,6 @@
 import React from 'react';
 import JokeService from '../services/JokeService.js';
-import { useState } from 'react';
+//import { useEffect, useState } from 'react';
 
 function JokePage() {
 	const [joke, setJoke] = useState('');

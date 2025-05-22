@@ -7,7 +7,6 @@ body {
 	box-sizing: border-box;
 	font-family: 'Jersey 10', sans-serif;
 	color: #820263;
-	margin-bottom: 20px;
 }
 body {
 	overflow-x: hidden;
@@ -66,7 +65,6 @@ button {
 	font-weight: 500;
 	border-radius: 30px;
 	color: #820263;
-	margin-bottom: 20px;
 }
 button:focus {
 	border: none;
@@ -130,7 +128,7 @@ nav {
 
 .albumImg {
 	width: 100%;
-	max-width: 100%;
+	max-width: 90%;
 	display: grid;
 	justify-self: center;
 }
@@ -162,7 +160,7 @@ main {
 	text-align: center;
 	height: 100%;
 	box-sizing: border-box;
-
+	margin-bottom: 0;
 	padding-top: 1rem;
 }
 input {
@@ -181,9 +179,7 @@ input:focus {
 }
 footer {
 	background-color: #cdb4db;
-	border: 1px solid #820263;
-	border-left: none;
-	border-right: none;
+	margin-top: 20px;
 }
 ol {
 	display: flex;
@@ -199,19 +195,8 @@ ol {
 	line-height: 0%;
 }
 @media screen and (max-width: 768px) {
-	.bandImg {
-		max-width: 80%;
-	}
+	.bandImg,
 	.albumImg {
-		max-width: 70%;
-	}
-	h2 {
-		font-size: 1em;
-	}
-	.info {
-		font-size: 2em;
-	}
-	p {
-		width: 350px;
+		width: 400px;
 	}
 }

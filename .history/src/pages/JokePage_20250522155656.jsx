@@ -1,6 +1,6 @@
 import React from 'react';
 import JokeService from '../services/JokeService.js';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function JokePage() {
 	const [joke, setJoke] = useState('');
@@ -11,9 +11,9 @@ function JokePage() {
 			setJoke(response.data);
 		});
 	}
-	/* 	useEffect(() => {
+	useEffect(() => {
 		getJoke();
-	}, []); //empty array means call on initialization */
+	}, []); //empty array means call on initialization
 
 	return (
 		<>
