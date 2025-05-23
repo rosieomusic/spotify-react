@@ -28,14 +28,14 @@ export default function SpotifyPage() {
 	}
 	function getTopTracks() {
 		SpotifyService.getTopTracks(artist.id, token).then((response) => {
-			//console.log(response);
+			console.log(response);
 			setTracks(response.data.tracks);
 		});
 	}
 	function handleKeyPress(event) {
 		if (event.key === 'Enter') {
 			SpotifyService.getArtist(artistName, token).then((response) => {
-				//console.log(response);
+				console.log(response);
 				setArtist(response.data.artists.items[0]);
 			});
 		}
@@ -52,6 +52,7 @@ export default function SpotifyPage() {
 	return (
 		<div className='spotify-wrapper'>
 			<div className='spotify-page'>
+				<h1>Spotify</h1>
 				<label htmlFor='artistName'>Artist Name:</label>
 				<input
 					type='text'
@@ -87,7 +88,7 @@ export default function SpotifyPage() {
 							</ul>
 
 							<div>
-								<button onClick={getTopTracks}>Top Tracks</button>
+								<button onClick={getTopTracks}>Get Top Tracks</button>
 							</div>
 							{track && track.length > 0 && (
 								<div className='top-tracks'>
@@ -110,7 +111,7 @@ export default function SpotifyPage() {
 							)}
 
 							<div className='albums'>
-								<button onClick={getAlbumInfo}>Albums</button>
+								<button onClick={getAlbumInfo}>Get Albums</button>
 								{albums && <AlbumComponent albums={albums} />}
 							</div>
 						</div>

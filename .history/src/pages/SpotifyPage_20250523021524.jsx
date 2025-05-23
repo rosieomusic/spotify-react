@@ -87,7 +87,7 @@ export default function SpotifyPage() {
 							</ul>
 
 							<div>
-								<button onClick={getTopTracks}>Top Tracks</button>
+								<button onClick={getTopTracks}>Get Top Tracks</button>
 							</div>
 							{track && track.length > 0 && (
 								<div className='top-tracks'>
@@ -110,7 +110,7 @@ export default function SpotifyPage() {
 							)}
 
 							<div className='albums'>
-								<button onClick={getAlbumInfo}>Albums</button>
+								<button onClick={getAlbumInfo}>Get Albums</button>
 								{albums && <AlbumComponent albums={albums} />}
 							</div>
 						</div>

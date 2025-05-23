@@ -110,7 +110,7 @@ export default function SpotifyPage() {
 							)}
 
 							<div className='albums'>
-								<button onClick={getAlbumInfo}>Albums</button>
+								<button onClick={getAlbumInfo}>Get Albums</button>
 								{albums && <AlbumComponent albums={albums} />}
 							</div>
 						</div>

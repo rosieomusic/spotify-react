@@ -18,7 +18,7 @@ function JokePage() {
 	return (
 		<div id='jokes'>
 			<p>{joke} </p>
-			<button onClick={getJoke}>Random Joke</button>
+			<button onClick={getJoke}>Get Random Dad Joke</button>
 		</div>
 	);
 }
