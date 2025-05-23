@@ -234,7 +234,7 @@ p#track:hover {
 }
 @media screen and (max-width: 768px) {
 	.bandImg {
-		max-width: 90%;
+		max-width: 80%;
 	}
 	.albumImg {
 		max-width: 90%;

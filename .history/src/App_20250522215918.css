@@ -42,7 +42,7 @@ body {
 	border: 5px dotted #820263;
 	padding: 20px;
 	box-sizing: border-box;
-	margin: 20px;
+	margin: 0 1em 1em 0;
 }
 
 #app-container {
@@ -73,6 +73,7 @@ button {
 	outline: none;
 	transition: border-color 0.25s;
 	transform: scale(1);
+
 	transform-origin: center;
 	padding: 0.6em 1.2em;
 	font-size: 1.1em;
@@ -234,10 +235,10 @@ p#track:hover {
 }
 @media screen and (max-width: 768px) {
 	.bandImg {
-		max-width: 90%;
+		max-width: 80%;
 	}
 	.albumImg {
-		max-width: 90%;
+		max-width: 70%;
 	}
 	h2 {
 		font-size: 1em;
