@@ -172,7 +172,6 @@ a {
 	background-color: #a2d2ff;
 	border-radius: 30px;
 	padding: 0.5em;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 .link {
 	background-color: #cdb4db;
@@ -227,7 +226,6 @@ ol {
 	margin: 20px;
 	font-size: 28px;
 	font-weight: 400;
-	display: border-box;
 
 	padding-left: 0;
 	height: auto;
@@ -239,8 +237,6 @@ ol {
 }
 .top-tracks {
 	border: 5px dotted #820263;
-	display: block;
-	margin: 4px;
 
 	justify-self: center;
 }

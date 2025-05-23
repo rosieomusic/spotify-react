@@ -40,7 +40,6 @@ body {
 }
 #jokes {
 	border: 5px dotted #820263;
-
 	padding: 20px;
 	box-sizing: border-box;
 	margin: 20px;
@@ -97,6 +96,7 @@ p {
 	text-align: center;
 	align-self: center;
 	margin-bottom: 20px;
+	text-shadow: black 1px 5px;
 }
 li {
 	list-style-type: none;
@@ -104,14 +104,13 @@ li {
 	white-space: normal;
 	word-break: break-word;
 	margin-top: 0;
-
-	font-family: 'Pixelify sans', sans-serif;
 }
 h2 {
 	font-size: 2em;
 	text-align: center;
 	padding-left: 1em;
 	padding-right: 1em;
+	text-shadow: black 3px 5px;
 }
 p {
 	font-size: 22px;
@@ -129,18 +128,8 @@ label {
 }
 
 nav {
-	display: flex;
-	gap: 5px;
-	justify-content: center;
 	text-align: center;
 	margin-top: 1rem;
-}
-#pxHrt {
-	width: 40px;
-}
-#pxHrt:hover {
-	transform: scale(1.05);
-	box-shadow: 0 2x 2px rgba(0, 0, 0, 0.25);
 }
 
 .info {
@@ -150,20 +139,22 @@ nav {
 	display: block;
 }
 .bandImg {
+	width: 100%;
+	display: block;
+	max-width: 100%;
 	border-radius: 70%;
-
-	border: none;
+	padding: 1em;
 }
-
 .bandImg,
 .albumImg {
 	margin: 0 auto;
-	max-width: 80%;
-	box-shadow: 1px 0px 15px 1px rgba(0, 0, 0, 1);
+
 	height: auto;
 }
 
 .albumImg {
+	width: 100%;
+	max-width: 100%;
 	display: block;
 }
 a {
@@ -172,12 +163,10 @@ a {
 	background-color: #a2d2ff;
 	border-radius: 30px;
 	padding: 0.5em;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .link {
 	background-color: #cdb4db;
-	box-shadow: none;
-	display: block;
 }
 .nav-link.active {
 	text-decoration: none;
@@ -188,8 +177,6 @@ a {
 	text-decoration: none;
 	color: #a2d2ff;
 	background-color: #820263;
-	transform: scale(1.05);
-	box-shadow: 0 2x 2px rgba(0, 0, 0, 0.25);
 }
 main {
 	display: flex;
@@ -204,18 +191,18 @@ main {
 }
 input {
 	margin-top: 10px;
-	border: 3px solid #ffafcc;
-
-	padding: 0.2em;
-	border-radius: 10px;
+	border: none;
+	padding: 0.5em;
+	border-radius: 30px;
 	font-family: 'Jersey 10', sans-serif;
 	font-size: 18px;
 	font-weight: 100;
 	color: #645394;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 input:focus {
+	border: none;
 	outline: none;
-	border: 3px solid #ffafcc;
 }
 footer {
 	background-color: #cdb4db;
@@ -227,8 +214,7 @@ ol {
 	margin: 20px;
 	font-size: 28px;
 	font-weight: 400;
-	display: border-box;
-
+	text-align: left;
 	padding-left: 0;
 	height: auto;
 }
@@ -239,8 +225,6 @@ ol {
 }
 .top-tracks {
 	border: 5px dotted #820263;
-	display: block;
-	margin: 4px;
 
 	justify-self: center;
 }

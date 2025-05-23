@@ -4,18 +4,17 @@ import { HashRouter, Routes, Route, NavLink } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import SpotifyPage from './pages/SpotifyPage';
 import JokePage from './pages/JokePage';
-import pixelHeart from './assets/pixel_heart.png';
+import pixelHeart from './assets/pixelHeart';
 
 function App() {
 	return (
 		<HashRouter>
 			<div id='app-container'>
+				<img
+					src={pixelHeart}
+					alt='pxhrt'
+				/>
 				<nav>
-					<img
-						id='pxHrt'
-						src={pixelHeart}
-						alt='pxhrt'
-					/>
 					<NavLink
 						to='/'
 						className={({ isActive }) =>
@@ -40,11 +39,6 @@ function App() {
 					>
 						Spotify
 					</NavLink>
-					<img
-						id='pxHrt'
-						src={pixelHeart}
-						alt='pxhrt'
-					/>
 				</nav>
 
 				<main>

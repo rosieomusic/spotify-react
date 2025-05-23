@@ -40,11 +40,6 @@ function App() {
 					>
 						Spotify
 					</NavLink>
-					<img
-						id='pxHrt'
-						src={pixelHeart}
-						alt='pxhrt'
-					/>
 				</nav>
 
 				<main>

@@ -227,7 +227,6 @@ ol {
 	margin: 20px;
 	font-size: 28px;
 	font-weight: 400;
-	display: border-box;
 
 	padding-left: 0;
 	height: auto;
@@ -239,8 +238,6 @@ ol {
 }
 .top-tracks {
 	border: 5px dotted #820263;
-	display: block;
-	margin: 4px;
 
 	justify-self: center;
 }

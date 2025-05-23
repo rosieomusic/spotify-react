@@ -11,11 +11,6 @@ function App() {
 		<HashRouter>
 			<div id='app-container'>
 				<nav>
-					<img
-						id='pxHrt'
-						src={pixelHeart}
-						alt='pxhrt'
-					/>
 					<NavLink
 						to='/'
 						className={({ isActive }) =>
@@ -24,6 +19,11 @@ function App() {
 					>
 						Home
 					</NavLink>{' '}
+					<img
+						id='pxHrt'
+						src={pixelHeart}
+						alt='pxhrt'
+					/>
 					<NavLink
 						to='/joke'
 						className={({ isActive }) =>
@@ -40,11 +40,6 @@ function App() {
 					>
 						Spotify
 					</NavLink>
-					<img
-						id='pxHrt'
-						src={pixelHeart}
-						alt='pxhrt'
-					/>
 				</nav>
 
 				<main>
