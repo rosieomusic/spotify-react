@@ -30,7 +30,6 @@ body {
 	background-color: #cdb4db;
 }
 .spotify-wrapper {
-	margin-top: 30px;
 	width: 100%;
 	min-width: 100vw;
 	min-height: 100vh;
@@ -44,10 +43,11 @@ body {
 
 	padding: 20px;
 	box-sizing: border-box;
-	margin: 40px 20px;
+	margin: 20px;
 }
 
 #app-container {
+	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -132,12 +132,9 @@ label {
 nav {
 	display: flex;
 	gap: 5px;
-
 	justify-content: center;
-	align-items: center;
 	text-align: center;
-	margin-top: 0.3rem;
-	padding: 5px;
+	margin-top: 1rem;
 }
 #pxHrt {
 	width: 40px;
@@ -193,6 +190,7 @@ a {
 	color: #a2d2ff;
 	background-color: #820263;
 	transform: scale(1.05);
+	box-shadow: 0 2x 2px rgba(0, 0, 0, 0.25);
 }
 main {
 	display: flex;

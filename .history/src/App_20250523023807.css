@@ -44,7 +44,7 @@ body {
 
 	padding: 20px;
 	box-sizing: border-box;
-	margin: 40px 20px;
+	margin: 20px;
 }
 
 #app-container {
@@ -132,12 +132,14 @@ label {
 nav {
 	display: flex;
 	gap: 5px;
-
+	border-bottom: 3px solid #820263;
+	margin-right: 60px;
+	margin-left: 20px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	margin-top: 0.3rem;
-	padding: 5px;
+	padding: 10px;
 }
 #pxHrt {
 	width: 40px;
@@ -193,6 +195,7 @@ a {
 	color: #a2d2ff;
 	background-color: #820263;
 	transform: scale(1.05);
+	box-shadow: 0 2x 2px rgba(0, 0, 0, 0.25);
 }
 main {
 	display: flex;
